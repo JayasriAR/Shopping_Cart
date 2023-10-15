@@ -21,7 +21,7 @@
         <div class="col-12 col-lg-3 col-xl-3 col-xxl-3">
             <h5>Product Title</h5>
         </div>
-   <div class="col-12 col-lg-8 col-xl-8 col-xxl-8"><input type="text" class="input_size" id="pro_title" onchange="validate()">
+   <div class="col-12 col-lg-8 col-xl-8 col-xxl-8"> <input onchange="validate()"  type="text" class="input_size" id="pro_title" >
     <div id="prodtitle_error">Enter Product title</div>
     <div id="prodtitle_format_error">Enter valid product title</div>
 
@@ -33,9 +33,9 @@
     <div class="col-12 col-lg-3 col-xl-3 col-xxl-3">
    <h5>Description</h5></div>
    <div class="col-12 col-lg-8 col-xl-8 col-xxl-8">
-   <textarea id="text_area" style="width: 80%; height: 100px;" onchange="validate()"></textarea>
+   <textarea id="text_area" style="width: 80%; height: 100px;" onchange="validate()" ></textarea>
    <div id="description_err">Enter Product Description</div>
-   <div id="description_format_err">Enter Valid Product Description</div>
+   <div id="description_format_err">Enter Product Description with Maximum length 10</div>
 
    
   </div>  
@@ -44,7 +44,7 @@
 <div class="row justify-content-center self-align-items p-3">
   <div class="col-12 col-lg-3 col-xl-3 col-xxl-3">
  <h5>Product Maxlimit</h5></div>
-  <div class="col-12 col-lg-8 col-xl-8 col-xxl-8"><input type="text" id="Maxlimit"  onchange="validate()" class="input_size"></br>
+  <div class="col-12 col-lg-8 col-xl-8 col-xxl-8"> <input onchange="validate()"  type="text" id="Maxlimit"   class="input_size"></br>
   <div id="maxlimit_err">Enter maximum limit for Product </div>
   <div id="maxlimit_format_err">Provide valid number for the maximum limit</div></div>
 
@@ -57,7 +57,9 @@
  <div class="col-12 col-lg-8 col-xl-8 col-xxl-8">
 <input type="file" id="input_image" onchange="preview_image(event)">
   <img src="./images/default.JPG" id="preview_img" class="p-3" >
-  <div id="validimg_err">Enter valid image [jpg, jpeg, png]</div>
+  <div id="validimg_err">Upload valid image [jpg, jpeg, png]</div>
+  <div id="validimg_err2">Upload product image</div>
+
    
 </div>
 </div>
@@ -76,11 +78,12 @@
   <option value="£">£</option>
 </select>
 <span id="price_sym_err">Choose currency symbol</span>
-   <input type="text" id="pro_price" onchange="validate()">
+    <input onchange="validate()"  type="text" id="pro_price" >
    <div id="price_err">Enter Product price</div>
   <div id="price_format_err">Enter valid price.</div></div>
 </div>
-<div class="row justify-content-center m-2 mb-5"><div class="col-1"><a href="./assests/files/product.html" class="product_link">view</a>
+<div class="row justify-content-center m-2 mb-5">
+  <div class="col-1"><button type="submit" onclick="validate()" class="product_link" id="redirect">View</button>
 </div></div>
 
 </div>
