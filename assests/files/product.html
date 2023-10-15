@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags --> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@400;700&family=Raleway:wght@200;500&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <title>Product View</title>
+  </head>
+  <body>
+ <!-- <section id="logo">
+  <h1 class="logo_style">BROWSE</h1>
+            <h1 class="logo_style">BUY</h1>
+ </section> -->
+
+<div class="container w-60 d-flex justify-content-center contain font_fam m-3">
+  <div class="row bg_card w-60 row-card shadow justify-content-center self-align-items pb-2">
+   
+      <div class="col-12 justify-content-end">
+        <span id="get_price_sym"></span></div>
+      
+       <div class="col-12 justify-content-center">
+      <div class="card d-flex justify-content-center">
+     <div class="w-100 d-flex justify-content-center" style="position: relative;">
+      <img id="get_img" class="shadow p-2"></div>
+        <div class="card-body">
+         <span id="get_prod_name" ></span></br>
+          <span class="card-text text-wrap" id="get_description"></span>
+        </div>
+    </div>  </div>
+  
+    <div class="row justify-content-center w-50 m-1">
+  
+  <div class="col-12 col-sm-6">
+    <div class= "btn-group" role="group" aria-label="Basic example">
+      <button type="button" class="btn btn-secondary" id="add"  onclick="add()">+</button>
+      <span id="get_price1"></span>
+      <button type="button" class="btn btn-secondary" id="sub"  onclick="sub()">-</button>
+     </div>
+    </div>
+  </div> 
+
+  
+  <div class="row justify-content-center w-100 m-1">
+    <div class="col-12 d-flex justify-content-center">
+     <div id="max_count_err">Max limit reached</div>
+    <div id="min_count_err">Count cannot be 0</div>
+    </div>
+    </div>   
+    <a href="order.html"><button type="button" class="btn btn-secondary" >Add to cart</button></a>
+  </div>
+</div>
+  
+ 
+
+
+
+<script src="../js/script_prod.js"> </script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+</body>
+</html>
