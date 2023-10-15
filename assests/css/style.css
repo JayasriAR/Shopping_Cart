@@ -38,20 +38,21 @@ padding: 0;
 .product_link{
     text-decoration: none;
     background-color: hsl(181deg 89% 33%) ;
-    padding: 10px 20px;
+    padding: 10px;
     border-radius: 5px;
     cursor: pointer;
    color: white;
+   border: none;
 }
 .product_link:hover{
     text-decoration: none;
     background-color: hsl(181deg 89% 33%) ;
-    padding: 10px 20px;
+    padding: 10px;
     border-radius: 5px;
     cursor: pointer;
    color: white;
 }
-#validimg_err,#price_sym_err,#prodtitle_error,#prodtitle_format_error,#description_format_err,#description_err,#maxlimit_format_err,#maxlimit_err,#price_format_err,#price_err{
+#validimg_err,#validimg_err2,#price_sym_err,#prodtitle_error,#prodtitle_format_error,#description_format_err,#description_err,#maxlimit_format_err,#maxlimit_err,#price_format_err,#price_err{
     color:red;
     display: none;
 }
