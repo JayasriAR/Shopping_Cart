@@ -14,8 +14,8 @@ To see a live demo of this project, you can visit [[https://jayasriar.github.io/
 **Order Confirmation:** Users can place an order, and a confirmation message is displayed.
 
 ## Technologies
--HTML
--CSS
--Bootstrap (for styling)
--JavaScript
--Local Storage (for storing cart items)
+- HTML
+- CSS
+- Bootstrap (for styling)
+- JavaScript
+- Local Storage (for storing cart items)
