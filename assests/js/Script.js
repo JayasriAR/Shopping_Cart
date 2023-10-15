@@ -29,12 +29,12 @@ function validate(event){
   }
 
   if(prodtitle){
-        if(prodtitle.length<=3){
+        if(prodtitle.length<3){
         document.getElementById('prodtitle_format_error').style="display: block"
         document.getElementById('prodtitle_error').style="display: none"
         tit=false;
   }
-else if(prodtitle.length>3){
+else if(prodtitle.length>=3){
   document.getElementById('prodtitle_format_error').style="display: none"
   document.getElementById('prodtitle_error').style="display: none"
   localStorage.setItem('prodname',prodtitle)
